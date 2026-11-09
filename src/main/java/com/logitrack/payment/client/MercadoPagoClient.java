@@ -25,6 +25,7 @@ public class MercadoPagoClient {
           "www.mercadopago.com.ar",
           "mercadopago.com.ar",
           "sandbox.mercadopago.com",
+          "sandbox.mercadopago.com.ar",
           "www.mercadopago.com",
           "mercadopago.com");
   private final RestClient client;

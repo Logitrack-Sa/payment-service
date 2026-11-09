@@ -55,7 +55,7 @@ class MercadoPagoClientTest {
                 .value("https://logitrack.example/logitrack/api/v1/payments/webhooks/mercadopago"))
         .andRespond(
             withSuccess(
-                "{\"id\":\"pref1\",\"sandbox_init_point\":\"https://sandbox.mercadopago.com/checkout?pref_id=pref1\"}",
+                "{\"id\":\"pref1\",\"sandbox_init_point\":\"https://sandbox.mercadopago.com.ar/checkout?pref_id=pref1\"}",
                 MediaType.APPLICATION_JSON));
     assertThat(client.createCheckout(order).id()).isEqualTo("pref1");
     server.verify();
